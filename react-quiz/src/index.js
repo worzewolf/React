@@ -6,12 +6,7 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-
-    <div>
-      <h2>I am react</h2>
-    </div> 
-
-    <App title={'I am from props!'}/>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
