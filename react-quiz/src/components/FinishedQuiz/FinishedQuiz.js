@@ -1,6 +1,7 @@
 import React from 'react'
 import classes from './FinishedQuiz.css'
 import Button from '../UI/Button/Button'
+import {Link} from 'react-router-dom'
 
 // renders total after answering all questions with counting right/false & buttons to retry Quiz
 const FinishedQuiz = props => {
@@ -43,12 +44,14 @@ const FinishedQuiz = props => {
                 >
                         Repeat
                 </Button>
-                <Button 
-                    onClick={props.onRetry} 
-                    type="success"
-                >
-                        Go to list
-                </Button>
+                <Link to="/">
+                    <Button 
+                        onClick={props.onRetry} 
+                        type="success"
+                    >
+                            Go to list
+                    </Button>
+                </Link>
             </div>
         </div>
     )
