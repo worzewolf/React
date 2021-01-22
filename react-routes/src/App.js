@@ -43,7 +43,7 @@ class App extends Component {
         <hr/>
         <div style={{textAlign: 'center'}}>
           <h3>Is logged in {this.state.isLoggedIn ? 'True' : 'False'}</h3>
-          <button onClick={() => this.setState({isLoggedIn: true})}>LogIn</button>
+          <button onClick={() => this.setState({isLoggedIn: true})}>Log In</button>
         </div>
         <hr/>
 
